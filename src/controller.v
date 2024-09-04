@@ -1,4 +1,3 @@
-
 module CONTROLLER(
     input clk,
     input reset,
