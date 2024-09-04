@@ -13,13 +13,13 @@ SPI (Serial Peripheral Interface): The SPI interface is responsible for transmit
 
 ROM (Read-Only Memory): The ROM stores the bitmap data that defines what will be displayed on the LED matrix. Each bitmap corresponds to a specific pattern, such as the beaver logo or the letters "BWSI." When the system is running, the controller fetches these bitmaps from the ROM and passes them to the SPI, which then sends them to the MAX7219/7221 for display.
 
-Controller: The controller acts as the brain of the project, coordinating the operations between the SPI and ROM. It determines which bitmap to display at any given time, retrieves the corresponding data from the ROM, and instructs the SPI to send this data to the MAX7219/7221. The controller manages the timing and sequence of the displays, ensuring smooth transitions between different images on the LED matrix.
+Controller: The controller acts as the brain of the project, coordinating the operations between the SPI and ROM. It determines which bitmap to display at any given time, retrieves the corresponding data from the ROM, and instructs the SPI to send this data to the MAX7219/7221. The controller manages the timing and sequence of the displays, ensuring appropriate transitions between different images on the LED matrix.
 
 ## How to test
 
 Set Up the FPGA Development Board:
   1. Power the FPGA: Ensure your FPGA development board is powered and properly connected to your computer via USB or other power sources.
-  2. Load the Design: Compile and load your Verilog design (including the LED matrix controller logic) onto the FPGA using your preferred synthesis tool
+  2. Load the Design: Compile and load your Verilog design (including the LED matrix controller logic) onto the FPGA
   3. Configure the I/O Pins: Map the appropriate FPGA I/O pins to the signals that will interface with the LED matrix and other hardware components.
 
 Prepare the Breadboard:
