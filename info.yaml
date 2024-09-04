@@ -3,7 +3,7 @@ project:
   title:        "32x8 LED Matrix Animation"      # Project title
   author:       "Lauren Low, Ayla Lin, Pavit Thakur"      # Your name
   discord:      "patricksbff"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A 32x8 LED matrix animation that cycles between rendering a detailed beaver logo and the letters 'BWSI'"      # One line description of what your project does
+  description:  "A 32x8 LED matrix animation driven by a MAX7219/7221 controller that cycles between rendering a detailed beaver logo and the letters 'BWSI'"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     33000000       # Clock frequency in Hz (or 0 if not applicable)
 
